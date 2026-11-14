@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang=" en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Software Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5938299544.js" crossorigin="anonymous"></script>"
+</head>
+<body>
+<!-- ------------------------------Header Section........................ -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo" alt="Andiswa's logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hie I'm<span> Andiswa Ndzimande</span><br>from South Africa</h1>
+        </div>
+    
+
+    </div> 
+    
+</div>
+<!-- ------------------------------About Section........................ -->
+<div id="About" >
+    <div class="container">
+        <div class="row">
+            <div class = "about-col-1">
+                <img src="images/workstation.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am a Software Engineer passionate about designing, developing and building technology-driven solutions. 
+                    I enjoy solving complex problems, learning new technologies and turning ideas into functional applications. 
+                    My interests include software development, data engineering, systems integration and software quality assurance. 
+                    I am committed to continuous learning, writing clean and maintainable code, and developing solutions that make a meaningful impact. 
+                    This portfolio highlights my technical skills, projects and growth as a Software Engineer.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event,'Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event,'Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span> Software Development</span><br>Building applications and solving problems through code</li>
+                        <li><span> Backend Development</span><br>Developing APIs, databases and server-side applications</li>
+                        <li><span> Systems integration</span><br>Connecting applications and services through APIs</li>
+                        <li><span> Software Testing & QA </span><br>Testing applications, identifying bugs and ensuring software quality</li>
+
+                    </ul>
+                </div>
+                    <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Current</span><br>Software Engineering<br>Practical Learning of software engineering concepts</li>
+                        <li><span>2026-Present</span><br>Logistics Volunteer at GDG Pretoria<br>Support person in the planning and coordination of tech events</li>
+                        <li><span>2026-Present</span><br>Administrator at Women In Ai-JHB <br>Actively giving admninistrative support to WAI members</li>
+                        <li><span>2025-2026</span><br>Recruitment Ambassodor<br>Teaching and introducing community members to coding and python programming introductory course</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2025-2027</span><br>Software Engineering<br>WeThinkCode_ NPC</li>                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ------------------------------Services Section........................ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-dev"></i>
+                <h2>Software development</h2>
+                <p>Developing functional applications and software solutions that solve real-world problems.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                <h2>Data Analysis</h2>
+                <p>Analysing, cleaning and interpreting data to uncover insights, identify patterns and support data-driven decision-making.</p>
+                 <a href="#">Learn more</a>
+            </div>
+            <div>
+            
+                <i class="fa-solid fa-code-compare"></i>
+                <h2>Software Testing and QA</h2>
+                <p>Performing manual and automated testing to identify bugs and improve software quality.</p>
+                 <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks =  document.getElementsByClassName("tab-links");
+    var tabcontents =  document.getElementsByClassName("tab-contents");
+    
+    function opentab(event,tabname){
+
+        for ( var tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for ( var tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>    
+</body>
+</html>
