@@ -11,8 +11,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background\ main.jpg
-     );
+    background-image: url(images/background-black.png);
     background-size: cover;
     background-position: center;
 }
@@ -65,7 +64,7 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 /*--------------about---------------------*/
-#about{
+#About{
     padding: 80px 0;
     color: #ababab;
 }
@@ -87,7 +86,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color:#fff
+    color:#fff;
 
 }
 .tab-titles{
@@ -169,7 +168,7 @@ nav ul li a:hover::after{
 
 }
 /*---------portfolio---------*/
-#portfolio{
+#Portfolio{
     padding:50px 0 ;
 }
 .work-list{
@@ -269,11 +268,11 @@ nav ul li a:hover::after{
     margin-right: 15px;
     color:#ababab;
     display: inline-block;
-    transform: transform 0.5s;
+    transition: transform 0.5s;
 }
 .social-icons a:hover{
     color:#ff004f;
-    transform: transalate(-5px);
+    transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
@@ -309,14 +308,13 @@ form .btn2{
 }
 
 /*.............css for small screens............*/
-
-nav .fas{
-    display:none;
+nav .fa-bars, nav .fa-xmark{
+display:none;
 }
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/background.jpg);
+        background-image: url(images/background-black-mobile.png);
     }
     .header-text{
         margin-top: 100%;
@@ -325,7 +323,7 @@ nav .fas{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fas{
+    nav .fa-bars,nav .fa-xmark{
     display:block;
     font-size: 25px;    
     }
@@ -345,7 +343,7 @@ nav .fas{
         margin: 25px;
 
     }
-    nav ul .fas{
+    nav ul .fa-xmark{
         position:absolute;
         top:25px;
         left: 25px;
